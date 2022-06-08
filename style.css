@@ -113,6 +113,7 @@ width: 170px;
 }
 .pagination {
   margin-top: 1em;
+  z-index: 0;
 }
 .page-item.active .page-link{
     background-color: burlywood;
@@ -125,3 +126,4 @@ width: 170px;
 .col-lg-8{
     margin-top:1em
 }
+
