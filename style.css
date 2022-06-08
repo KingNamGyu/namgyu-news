@@ -87,7 +87,7 @@
   display: none;
   margin-right: 20px;
 }
-.search{
+.search-box{
   background-color: rgb(86, 123, 149);
   border: 1px solid rgb(50, 104, 145);
   color: rgb(255, 255, 255);
@@ -101,6 +101,11 @@
   .menus {
     display: none;
   }
+}
+@media screen and (max-width: 30rem) {
+.input-box{
+width: 200px;
+}
 }
 .pagenation-nav {
   display: flex;
