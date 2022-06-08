@@ -55,18 +55,25 @@ const getNewsByTopic = async (event) => {
 
 const getNewsByKeyword = async () => {
   //1.검색 키워드 읽어오기
-  //2.url에 검색 키워드 부치기
+  //2.url에 검색 키워드 부치기 
   //3.헤더준비
   //4.url부르기
   //5.데이터 가져오기
   //6.데이터 보여주기
 
+
   let keyword = document.getElementById("search-input").value;
   url = new URL(
     `https://api.newscatcherapi.com/v2/search?q=${keyword}&page_size=10`
   );
+  if (document.getElementById("search-input").value == "") {
+    alert("검색어를 입력해주세요.");
+    return;
+  }
+  document.getElementById("search-input").value = "";
   getNews();
 };
+
 
 const render = () => {
   let newsHTML = "";
