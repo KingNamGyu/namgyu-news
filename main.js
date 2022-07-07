@@ -14,7 +14,7 @@ menus.forEach((menu) =>
 const getNews = async () => {
   try {
     let header = new Headers({
-      "x-api-key": "_grRTHnrByqVKmIltgadR01-JP5CxqJ2e0zyHOI_sFY",
+      "x-api-key": "3SZcMDyHiMRHxQz91c_5-5JRCtgtCn5qhwrfYdDjfMw",
     });
     url.searchParams.set("page", page);
     console.log("url은?", url);
